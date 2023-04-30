@@ -1,0 +1,12 @@
+.app{
+  height: 100vh;
+
+}
+
+.json-box{
+  border: 1px solid #cfcfcf;
+  height: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #fff;
+}
