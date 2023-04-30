@@ -4,7 +4,7 @@ const UiSchema = ({json}) => {
     
   return (
     <div>
-        <div>JSON</div>
+        <div>{JSON.stringify(json)}</div>
     </div>
     
   )
