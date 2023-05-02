@@ -10,11 +10,11 @@ Truefoundry Frontend Assignment
 
 ![image1.png](https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image1.png)
 
-![image2.png](src/assets/image2.png)
+![image2.png](https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image2.png)
 
-![image3.png](src/assets/image3.png)
+![image3.png](https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image3.png)
 
-![image4.png](src/assets/image4.png)
+![image4.png](https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image4.png)
 
 # 🧐 About
 
