@@ -8,7 +8,7 @@ Truefoundry Frontend Assignment
 
 # 📸 Screenshots
 
-<img src="https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image1.png" />
+<img src="./src/assets/image1.png" />
 
 ![image2.png](https://github.com/RishabhJ01/Frontend-Assignment.git/src/assets/image2.png)
 
