@@ -1,22 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { RadioGroup } from '@headlessui/react'
 
-const Radio = ({jsonData}) => {
+const Radio = ({jsonData, setActiveComponent}) => {
 
-  const [activeTab, setActiveTab] = useState(jsonData.validate.options[0].value);
+  useEffect(() => {
+    setActiveComponent(jsonData.validate.defaultValue);
+  }, [])
+
+  const handleTab = (event) => {
+    setActiveTab(event)
+    setActiveComponent(event);
+  }
+
+  const [activeTab, setActiveTab] = useState(jsonData.validate.defaultValue);
+
   return (
-    
-      <RadioGroup value={activeTab} onChange={setActiveTab}>
+    <>
+      <RadioGroup value={activeTab} onChange={(event) => handleTab(event)}>
         <div className='grid grid-cols-2 gap-4 mt-2'>
-          {jsonData.validate.options.map((option) => {
-            return (<RadioGroup.Option value={option.value}>
+          {
+          jsonData.validate.options.map((option) => {
+            const value = option.value
+            return (<RadioGroup.Option value={value}>
               {({ checked }) => (
-                <div className={checked ? "ui-item-active" : 'ui-item'}>{option.value}</div>
-              )}
+                <div className={checked ? "ui-item-active" : 'ui-item'}>{option.label}</div>
+              )
+              }
             </RadioGroup.Option>)
+            
           })}
         </div>
       </RadioGroup>
+    </>
   )
 }
 

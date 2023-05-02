@@ -4,7 +4,7 @@ import { Switch } from '@headlessui/react';
 const SwitchUi = ({jsonData}) => {
     const [enabled, setEnabled] = useState(jsonData.validate.defaultValue);
   return (
-    <div className='grid grid-cols-2 gap-4 mt-3'>
+    <div className='grid grid-cols-2 gap-4'>
         <span>{jsonData.label}*</span>
         <Switch
             checked={enabled}
